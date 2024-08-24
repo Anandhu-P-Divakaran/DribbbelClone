@@ -1,0 +1,413 @@
+/* set margin and padding to 0 for avoid the horizontal scrollbar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* setting the font properties and background properties for body section */
+body{
+    font-family: 'Mona-Sans', sans-serif, Helvetica, sans-serif, Arial;
+    font-size: 16px;
+    font-weight: 450;
+    background-color: rgb(242, 242, 242);
+    overflow-x: hidden;
+}
+/* Styles for navbar section */
+.navbar{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    font-size: 14px;
+}
+.logo_container{
+    width: 20%;
+    max-width: 100px;
+}
+.logo_container > img{
+    width: 100%;
+    object-fit: cover;
+}
+.navigations_controles{
+    margin-right: 18%;
+}
+.navigations_controles > ul > li{
+    display: inline;
+    padding: 10px;
+}
+.navigations_controles > ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+.navigations_controles > ul > li > a > i{
+    font-size: 14px;
+    margin: 5px;
+}
+.searchAndAccounts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchbar_container{
+    width: 300px;
+    height: 70px;
+}
+.searchAndAccounts > .searchbar_container > .search_bar{
+    align-items: center;
+    background-color: #fff;
+    padding: 18px;
+    border-radius: 30px;
+}
+.searchAndAccounts > .searchbar_container >  .search_bar > input{
+    border: none;
+    outline: none;
+}
+.searchAndAccounts > .searchbar_container >   .search_bar > i{
+    font-size: 16px;
+    color: grey;
+    margin: 0 2px;
+}
+.searchAndAccounts > .searchbar_container >   .search_bar:hover{
+    border: 2px solid pink;
+}
+.btn_login{
+    background: none;
+    border: none;
+    outline: none;
+    margin: 0 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn_signup{
+    width: 100px;
+    text-align: center;
+    background-color: #000;
+    border-radius: 30px;
+    outline: none;
+    color: #fff;
+    padding: 15px; 
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Starting the styles for header contents */
+.head_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px;
+}
+.head_container > .para_creative{
+    background-color: yellow;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    animation: color_changer 10s infinite;
+}
+.head_container > h1{
+    text-align: center;
+    max-width: 900px;
+    font-size: 72px;
+    font-weight: 400;
+}
+.slogan{
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+.btn_start{
+    background-color: #000;
+    padding: 20px 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.btn_start:hover{
+    background-color: rgb(96, 96, 96);
+}
+/* Starting the scroll section styling and animation*/
+.scroll_section{
+    padding: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.scroller{
+    width: 250px;
+    background-color: tomato;
+    border-radius: 30px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    animation: scroll 15s linear infinite;
+}
+.scroller > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img_details{
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    color: #fff;
+    line-height: 1.5;
+    font-size: 14px;
+}
+.img_details > button{
+    padding: 4px 8px;
+    background: transparent;
+    border: 0.5px solid rgb(240, 240, 240);
+    border-radius: 30px;
+    color: #fff;
+    outline: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+/* Styles for Main contents */
+.Explore{
+    padding: 60px;
+}
+.Explore > .explore_title{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 400;
+}
+.Explore .explore_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.explore_container .explore_contents{
+    border-radius: 20px;
+    width: 28%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: left;
+    padding: 3px;
+    margin: 40px 30px;
+}
+.explore_container .explore_contents .img_container{
+    min-width: 100%;
+    height: 100;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.explore_container .explore_contents .img_container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.explore_container .explore_contents  .brand_logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    overflow: hidden;
+    margin: 8px;
+}
+.explore_container .explore_contents  .brand_logo img{
+    width: 99%;
+    height: 99%;
+    cursor: pointer;
+}
+.explore_container .explore_contents .brand_name{
+    margin: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.explore_container .explore_contents button{
+    margin: 5px 5% 5px 5px;
+    padding: 3px;
+    color: #f0f0f0;
+    background-color: rgb(166, 165, 165);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 550;
+    cursor: pointer;
+}
+.explore_container .explore_contents button:hover{
+    background-color: #000;
+}
+.explore_container .explore_contents  .insight{
+    max-width: 40%;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: end;
+}
+.explore_container .explore_contents  .insight i{
+    margin: 0 2px ;
+    color: grey;
+}
+.explore_container .explore_contents  .insight .love:hover{
+    color: rgb(220, 15, 172);
+    cursor: pointer;
+}
+.explore_container .explore_contents  .insight p{
+    margin: 0 10px 0 0;
+}
+.browse_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.brows_btn{
+    background: none;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* find designers and hiring section styling section starts here */
+.find_designer{
+    background-color: #ffda79;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+.find_designer > .find_designer_container{
+    width: 60%;
+}
+.find_designer > .find_designer_container h1{
+    min-width: 100%;
+    font-size: 72px;
+    font-weight: 500;
+    text-align: center;
+}
+.find_designer > .find_designer_container p{
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.find_designer .findBtn_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.find_designer .findBtn_container .find_btn{
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.find_designer .findBtn_container .btn1{
+    background-color: #000;
+    color: #fff;
+}
+.find_designer .findBtn_container .btn2{
+    background-color: #fff;
+    color: #000;
+}
+.find_designer a{
+    color: #000;
+}
+
+/* Styles for footer scrolling image cards and animations */
+.footer_scroll{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    animation: scroll 30s linear infinite;
+}
+.footer_scroll .front{
+    width: 250px;
+    height: 200px;
+    background-color: rgb(227, 255, 184);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #fff;
+    outline: 4px solid rgb(157, 247, 157);
+}
+.footer_scroll .front img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.scroll_head{
+    margin: 20px 0;
+}
+.search_Accounts i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+.footer_navigation{
+    padding: 40px;
+}
+.footer_details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 10px;
+}
+.footer_left{
+    display: flex;
+    align-items: center;
+}
+.footer_left p,i{
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 250;
+}
+.footer_right{
+    display: flex;
+}
+.footer_right p{
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 250;
+}
+
+/* Animation fuctions for main section scroll bar */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+  }
+
+  /* Animation functions for header first paragraph section */
+  @keyframes color_changer{
+    0%{
+        background-color: rgb(255, 88, 88);
+    }
+    25%{
+        background-color: rgb(15, 199, 15);
+    }
+    50%{
+        background-color: violet;
+    }
+    75%{
+        background-color: yellowgreen;
+    }
+    100%{
+        background-color: rgb(255, 202, 127);
+    }
+  }
